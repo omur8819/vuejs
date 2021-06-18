@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>VueJS Demo</title>
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+  <body>
+      <div id="app">
+        <div 
+          @click="attachedClass = !attachedClass"
+          :class="divClass" 
+          class="box">
+        </div>
+        <div :class="[color, { yellow: attachedClass }]"  class="box"></div>
+        <div class="box"></div>
+        <hr>
+        <input type="text" v-model="color">
+
+
+      <script src="./app.js"></script>
+  </body>
+</html>
+</html>

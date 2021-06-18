@@ -1,13 +1,29 @@
 new Vue({
   el:"#app",
   data: {
-    link: "https://www.google.com"
+    player_heal: 100,
+    monster_heal: 100,
+    game_is_on: false,
   },
   methods: {
-    changeLink: function(){
-      this.link = "https://microsoft.com"
-    }
+    start_game: function(){
+      this.game_is_on = true;
+    },
+    attack: function(){
+
+    },
+    special_attack: function(){
+
+    },
+    heal_up: function(){
+
+    },
+    give_up: function(){
+
+    },
   },
+  
+  
   
 })
 
